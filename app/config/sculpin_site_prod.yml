@@ -1,0 +1,4 @@
+imports:
+- sculpin_site.yml
+url: http://example.com
+production: true
