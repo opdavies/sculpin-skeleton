@@ -1,4 +1,4 @@
+/.sculpin/
 /output_*/
 /source/components/
-/.sculpin/
-.DS_Store
+publish.sh
