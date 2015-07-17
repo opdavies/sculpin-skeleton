@@ -1,2 +1,5 @@
 sculpin:
     permalink: pretty
+sculpin_content_types:
+    posts:
+        enabled: false
