@@ -1,10 +1,8 @@
-sculpin-minimal
-===============
+# sculpin-minimal
 
 A minimal installation of [Sculpin](http://sculpin.io).
 
-Build
------
+## Build
 
 ### If You Already Have Sculpin
 
