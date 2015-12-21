@@ -1,0 +1,22 @@
+{
+    "name": "opdavies/sculpin-minimal",
+    "description": "A minimal installation of Sculpin.",
+    "licence": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Oliver Davies",
+            "email": "oliver@oliverdavies.uk",
+            "homepage": "https://www.oliverdavies.uk"
+        }
+    ],
+    "require": {
+        "sculpin/sculpin": "2.0.*",
+        "components/bootstrap": "3.3.5",
+        "components/jquery": "~1.9.1"
+    },
+    "config": {
+        "component-dir": "source/components"
+    }
+}
