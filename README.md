@@ -4,15 +4,12 @@ A minimal installation of [Sculpin](http://sculpin.io).
 
 ## Build
 
-### If You Already Have Sculpin
+If this is a fresh download, or you don’t have a `vendor` directory, use [Composer](https://getcomposer.org) to download the dependencies.
 
-    sculpin install
-    sculpin generate --watch --server
+    composer install
 
-Your newly generated clone of the site is now accessible at `http://localhost:8000/`.
+Once everything is downloaded, use the `sculpin` command to generate the site.
 
-### If You Need Sculpin
+    ./vendor/bin/sculpin generate --watch --server
 
-    curl -O https://download.sculpin.io/sculpin.phar
-    php sculpin.phar install
-    php sculpin.phar generate --watch --server
+The site is now accessible at http://localhost:8000/.
