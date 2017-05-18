@@ -12,10 +12,5 @@
     "require": {
         "sculpin/sculpin": "^2.1@dev",
         "dflydev/embedded-composer": "^1.0@dev",
-        "components/bootstrap": "3.3.5",
-        "components/jquery": "~1.9.1"
-    },
-    "config": {
-        "component-dir": "source/components"
     }
 }
