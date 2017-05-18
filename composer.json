@@ -1,6 +1,6 @@
 {
-    "name": "opdavies/sculpin-minimal",
-    "description": "A minimal installation of Sculpin.",
+    "name": "opdavies/sculpin-skeleton",
+    "description": "A skeleton Sculpin site.",
     "licence": "MIT",
     "authors": [
         {
