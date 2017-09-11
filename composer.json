@@ -12,18 +12,5 @@
     "require": {
         "dflydev/embedded-composer": "^1.0@dev",
         "sculpin/sculpin": "^2.1@dev"
-    },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "SculpinSkeleton\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "SculpinSkeleton\\composer\\ScriptHandler::createRequiredFiles"
-        ]
     }
 }
