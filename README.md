@@ -5,7 +5,7 @@ A skeleton project for the [Sculpin][1] static site generator.
 ## Usage
 
 1. Download the project by running `composer create-project opdavies/sculpin-skeleton --stability dev my-sculpin-site`.
-1. Run `vendor/bin/sculpin generate --server --watch` to generate and serve the site.
+1. Run `composer run dev` to generate and serve the site.
 1. Start adding content to `source/index.md`.
 
 ## Notes

@@ -12,5 +12,9 @@
     "require": {
         "dflydev/embedded-composer": "^1.0@dev",
         "sculpin/sculpin": "^2.1@dev"
+    },
+    "scripts": {
+        "dev": "sculpin generate --server --watch --clean --no-interaction",
+        "prod": "sculpin generate --env prod --clean --no-interaction"
     }
 }
