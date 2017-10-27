@@ -42,3 +42,9 @@ Quit the server with CONTROL-C.
 
 [1]: https://sculpin.io
 [2]: https://getcomposer.org/doc/06-config.md#process-timeout
+
+## License
+
+[MIT][0]
+
+[0]: https://github.com/opdavies/sculpin-skeleton/blob/master/LICENSE

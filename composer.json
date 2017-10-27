@@ -1,7 +1,7 @@
 {
     "name": "opdavies/sculpin-skeleton",
     "description": "A skeleton Sculpin site.",
-    "licence": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Oliver Davies",
