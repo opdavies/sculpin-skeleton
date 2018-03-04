@@ -5,7 +5,7 @@ A skeleton project for the [Sculpin][1] static site generator.
 ## Usage
 
 1. Download the project by running `composer create-project opdavies/sculpin-skeleton --no-interaction --no-progress --prefer-dist my-sculpin-site`.
-1. Run `cd my-sculpin-site` to change into the project directory, and `composer run watch` to generate and serve the site.
+1. Run `cd my-sculpin-site` to change into the project directory, and `composer watch` to generate and serve the site.
 1. Start adding content to `source/index.md`.
 1. Add more content, settings, layouts, includes etc as needed.
 
@@ -15,15 +15,15 @@ This project includes some custom Composer scripts that you can use rather than 
 
 These are:
 
-- `composer run generate` and `composer run dev` - These generate the site in the development mode.
-- `composer run watch` - Generates and serves the site in development mode, watching for any changes.
-- `composer run prod` - Generates the site in production mode.
+- `composer generate` and `composer dev` - These generate the site in the development mode.
+- `composer watch` - Generates and serves the site in development mode, watching for any changes.
+- `composer prod` - Generates the site in production mode.
 
-You can still pass additional options by separating the command and options with `--`. For example, running `composer run watch -- --port=8002` would run the default watch command but also update the server port:
+You can still pass additional options by separating the command and options with `--`. For example, running `composer watch -- --port=8002` would run the default watch command but also update the server port:
 
 ```
-composer run watch -- --port=8002
-> composer run generate -- --server --watch '--port=8002'
+composer watch -- --port=8002
+> composer generate -- --server --watch '--port=8002'
 > sculpin generate --clean --no-interaction '--server' '--watch' '--port=8002'
 Deleting /Users/opdavies/Code/Personal/sculpin-skeleton/output_dev
 Detected new or updated files
