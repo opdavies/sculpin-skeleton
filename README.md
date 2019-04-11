@@ -1,6 +1,6 @@
 # Sculpin Skeleton
 
-A skeleton project for the [Sculpin][1] static site generator.
+A minimal, generic skeleton project for the [Sculpin][1] static site generator.
 
 ## Usage
 
