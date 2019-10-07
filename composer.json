@@ -19,7 +19,7 @@
         "watch": [
             "Composer\\Config::disableProcessTimeout",
             "composer run-script generate -- --watch --server"
-        ],
+        ]
     },
     "extra": {
         "branch-alias": {
