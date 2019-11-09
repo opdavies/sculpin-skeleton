@@ -13,7 +13,8 @@
         "sculpin/sculpin": "^3.0"
     },
     "scripts": {
-        "dev": "composer run-script generate",
+        "build": "sculpin generate --clean --no-interaction --env prod",
+        "dev": "sculpin generate --clean --no-interaction",
         "generate": "sculpin generate --clean --no-interaction",
         "prod": "composer run-script generate -- --env prod",
         "watch": [
