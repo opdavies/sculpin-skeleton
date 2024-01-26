@@ -1,0 +1,13 @@
+name: sculpin-skeleton
+type: sculpin
+language: php
+
+flake:
+  devshell:
+    packages:
+      - php81
+      - php81Packages.composer
+
+git:
+  ignore:
+    - /flake.lock

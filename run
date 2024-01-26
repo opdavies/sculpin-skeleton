@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+PATH="${PATH}:./vendor/bin"
+
+# Generate the site.
+function generate {
+  local args=()
+
+  if [[ "${APP_ENV:-}" == "production" ]]; then
+    args=(--env="prod")
+  else
+    args=(--server --watch)
+  fi
+
+  sculpin generate "${args[@]}"
+}
+
+function help {
+  printf "%s <task> [args]\n\nTasks:\n" "${0}"
+
+  compgen -A function | grep -v "^_" | cat -n
+
+  printf "\nExtended help:\n  Each task has comments for general usage\n"
+}
+
+# Start the project.
+function start {
+  sculpin generate --server --watch "${@}"
+}
+
+# Include any local tasks.
+[[ -e run.local ]] && source run.local
+
+TIMEFORMAT="Task completed in %3lR"
+time "${@:-help}"
+
+# vim: ft=bash
