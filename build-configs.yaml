@@ -1,0 +1,13 @@
+---
+name: sculpin-skeleton
+template: sculpin-site
+parameters:
+  nix:
+    devshell:
+      packages:
+        - php81
+        - php81Packages.composer
+
+  git:
+    ignore:
+      - /flake.lock
