@@ -35,7 +35,8 @@ function start {
 }
 
 # Include any local tasks.
-[[ -e run.local ]] && source run.local
+# https://stackoverflow.com/a/6659698
+[[ -e "${BASH_SOURCE%/*}/run.local" ]] && source "${BASH_SOURCE%/*}/run.local"
 
 TIMEFORMAT="Task completed in %3lR"
 time "${@:-help}"
