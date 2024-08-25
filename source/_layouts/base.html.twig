@@ -7,6 +7,8 @@
         <title>{{ site.name|default('Sculpin Skeleton') }}</title>
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            {% block content %}{% endblock %}
+        {% endblock %}
     </body>
 </html>
